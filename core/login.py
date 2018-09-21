@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 
+
 def sign_in():
     worning = "Wrong choice!"
     user = input("please enter your name:").strip()
@@ -32,14 +33,14 @@ def sign_in():
         students.append(student)
         users[student.name]=[pswd,"2"]
 
-def login():
+def login(users):
     login_times = 0
     while login_times <3:
-        username = input("please input your username:")
-        password = input("please input your password:")
+        username = input("please input your username:").strip()
+        password = input("please input your password:").strip()
         if username in users:
             type = users[username][1]
-            if users[username][0] != password:
+            if users[username][0] == password:
                 print("Welcome to BlingSchool!")
                 authorize = True
                 break

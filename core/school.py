@@ -33,6 +33,7 @@ class School(object):
         """设立课程"""
         course = Course(course_name,fee,class_hour)
         self.course.append(course)
+        print("Set course %s"%course_name)
 
     def set_class(self,class_name):
         """设立班级"""

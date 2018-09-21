@@ -20,15 +20,15 @@ def pickle_load(filename):
         data = pickle.load(fp)
     return data
 
-users = {1:2,"hello":"hi"}
-teachers = [1,2]
-students = [11,212]
-
-pickle_dump(users,"users")
-pickle_dump(teachers,"teachers")
-pickle_dump(students,"students")
-
-users = pickle_load("users")
-teachers = pickle_load("teachers")
-students = pickle_load("students")
-print(teachers,students,users)
+# users = {1:2,"hello":"hi"}
+# teachers = [1,2]
+# students = [11,212]
+#
+# pickle_dump(users,"users")
+# pickle_dump(teachers,"teachers")
+# pickle_dump(students,"students")
+#
+# users = pickle_load("users")
+# teachers = pickle_load("teachers")
+# students = pickle_load("students")
+# print(teachers,students,users)
