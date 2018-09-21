@@ -16,7 +16,10 @@ class School(object):
         self.id = str(id)
 
     def hire(self,teacher,salary):
-        """雇佣老师"""
+        """雇佣老师
+        :param salary:
+        :param teacher: teacher obj
+        """
         teacher.id = self.id + str(10000 + len(self.stuff_lists))
         teacher.salary = salary
         print("Hired %s, id %s "%(teacher.name,teacher.id))

@@ -58,7 +58,7 @@ def login(users):
             authorize = False
             login_times += 1
             continue
-    return authorize,type
+    return authorize,type,username
 
 def auth(type):
     login_status = login()
